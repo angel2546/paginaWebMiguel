@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina web Miguel Suarez</title>
+    <link rel="stylesheet" href="css/modoClaro.css" />
+    <link rel="stylesheet" href="css/modoOscuro.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/texto.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="distancia">
+            <button id="menu-toggle" class="boton-menu">☰</button>
+            <div class="menu-links" id="menu-links">
+                <button onclick="mostrarSeccion('inicio')" class="botonesPrin">INICIO</button>
+                <button onclick="mostrarSeccion('estudios') " class="botonesPrin">ESTUDIOS</button>
+                <button onclick="mostrarSeccion('proyectos')" class="botonesPrin">PROYECTOS</button>
+                <button onclick="mostrarSeccion('contacto')" class="botonesPrin">CONTACTO</button>
+                <button id="toggle-tema" class="botonesPrin">🌑</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="inicio" class="seccion activa">
+        <div class="contenido">
+            <img src="imagenes/fotoMiguel.png" alt="fotoMiguel" width="200" height="200" class="foto" />
+            <div class="textoFoto" class="rectangulo">
+                <h1 class="tituloPrin">Miguel Angel Suarez Atehotúa</h1>
+                <p class="texto">
+                    Soy estudiante de Ingenieria de sistemas con conocimientos en
+                    desarrollo web (HTML, CSS y python), fundamentos de programación y
+                    soporte tecnico.
+                    <strong>apasiona la tecnologia y siempre busco aprender cosas
+                        nuevas</strong>
+                    que me ayuden a crecer profesionalmente.<br />
+                    Tengo habilidades en comunicación, atencion al cliente y resolucion
+                    de problemas.Me considero una persona responsable, creativa y con
+                    muchas ganas de seguir desarrollando proyectos que integren lo
+                    tecnico con lo humano
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="estudios" class="seccion">
+
+        <h1 class="titulo">ESTUDIOS</h1>
+        <p class="texto">
+
+            Estudiante de 4to semestre de ingeneria de sistemas en la Escuela
+            Tecnologica Intituto Tecnico Central (ETITC)
+
+        </p>
+
+        <h1 class="tituloTexto"> Escuela tecnologica Instituto Tecnico Central</h1>
+
+        <p class="texto">
+            <li class="texto">
+                Estudiate de ingeniera de sistemas actualmente cursando el 4to semestre
+
+            </li>
+        <p>
+        </p>
+
+        </p>
+
+
+
+
+
+
+
+
+    </section>
+
+    <section id="proyectos" class="seccion">
+
+        <h1 class="titulo">PROYECTOS</h1>
+        <p class="texto">
+            Estos son los proyectos que he realizado a lo largo de mi carrera y
+            proyectos propios
+
+        </p>
+
+    </section>
+    <section id="contacto" class="seccion">
+        <h1 class="titulo">CONTACTO</h1>
+
+        <p class="texto">
+            Mis medios de contacto son los siguientes
+
+        </p>
+
+        <div class="botonesCentrados">
+            <a href="https://www.linkedin.com/in/miguelasuareza" target="_blank">
+                <button class="botones">Linkedin</button>
+            </a>
+            <a href="https://wa.me/" target="_blank">
+                <button class="botones">WhatsApp</button>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=miguelasuareza@gmail.com&su=Interes+En+Su+Perfil"
+                target="_blank">
+                <button class="botones">Correo</button>
+            </a>
+
+        </div>
+
+    </section>
+</body>
+
+<footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const menuLinks = document.getElementById("menu-links");
+
+        function mostrarSeccion(id) {
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(sec => sec.classList.remove('activa'));
+            document.getElementById(id).classList.add('activa');
+        }
+
+        menuToggle.addEventListener("click", () => {
+            menuLinks.classList.toggle("abierto");
+        });
+
+        const boton = document.getElementById("toggle-tema");
+        boton.addEventListener("click", function () {
+            document.body.classList.toggle("modo-oscuro");
+            if (document.body.classList.contains("modo-oscuro")) {
+                boton.innerHTML = "🌕";
+            } else {
+                boton.innerHTML = "🌑";
+            }
+        });
+    </script>
+</footer>
+
+
+</html>
