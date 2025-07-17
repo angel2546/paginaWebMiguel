@@ -1,0 +1,63 @@
+
+.modo-oscuro {
+  background-color: #222831;
+  color: #ffffff;
+}
+
+.modo-oscuro .titulo,
+.modo-oscuro .tituloPrin,
+.modo-oscuro .botones,
+.modo-oscuro .botonesPrin,
+.modo-oscuro .textoFoto,
+.modo-oscuro strong {
+  color: #948979;
+}
+
+.modo-oscuro .texto {
+  background-color: #393e46;
+  border-radius: 20px;
+  color: #d8bd95;
+}
+
+.modo-oscuro .distancia,
+.modo-oscuro .botones,
+.modo-oscuro .botonesPrin {
+  background-color: #948979;
+  color: #393e46;
+}
+
+.modo-oscuro .botones:hover,
+.modo-oscuro .botonesPrin:hover {
+  background-color: #393e46;
+  color: #948979;
+}
+
+/* Estilos para el menú en modo oscuro */
+.modo-oscuro .menu-links {
+  background-color: #948979;
+}
+
+.modo-oscuro .boton-menu {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.modo-oscuro .botonesPrin {
+  background-color: #948979;
+  color: #393e46;
+}
+
+.modo-oscuro .botonesPrin:hover {
+  background-color: #393e46;
+  color: #948979;
+}
+.modo-oscuro .menu-links {
+  transition: all 0.3s ease;
+}
+.modo-oscuro .boton-menu,
+.modo-oscuro .menu-links{
+
+  background-color: #948979 ;
+
+}
+

@@ -1,0 +1,45 @@
+.titulo {
+  color: #070707;
+  text-align: center;
+  font-size: 2em;
+
+  margin-top: auto;
+
+  margin-bottom: 20px;
+  margin-top: 3ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloPrin {
+  color: #070707;
+  text-align: center;
+  font-size: 2em;
+}
+.tituloTexto {
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+
+  margin-top: auto;
+  margin-top: 3ch;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.textoFoto {
+  max-width: 1180px;
+}
+.texto {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px auto 15px auto;
+  font-size: 1.5em;
+  max-width: 600px;
+  padding: 0 20px;
+  width: auto;
+  height: auto;
+  background-color: #98a1bc;
+  border-radius: 20px;
+}

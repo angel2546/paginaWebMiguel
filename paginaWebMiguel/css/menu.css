@@ -1,0 +1,55 @@
+@media (max-width: 600px) {
+  .menu .distancia {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+}
+
+/* Ocultar menú en pantallas pequeñas por defecto */
+.menu-links {
+  display: flex;
+  gap: 10px;
+}
+
+.boton-menu {
+  display: none;
+  background-color: #222831;
+  color: #ffffff;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  align-items: center;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    background-color: #222831;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 90%;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .boton-menu {
+    display: block;
+  }
+
+  .menu-links.abierto {
+    display: flex;
+  }
+
+  .botonesPrin {
+    width: 100%;
+    text-align: left;
+  }
+}
+.menu-links {
+  transition: all 0.3s ease;
+}
+
+
